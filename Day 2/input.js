@@ -1034,9 +1034,11 @@ function isIncreasingOrDecreasing(element1, element2) {
 
     if (element1 < element2)
         flag = 'I'
-    else
+    else if (element1 > element2)
         flag = 'D'
-
+    else if (element1 === element2)
+        flag = 'E'
+    
     return flag
 
 }
